@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Uber</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Ana Sayfa</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Şubeler
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">İstanbul</a></li>
+                      <li><a class="dropdown-item" href="#">İzmir</a></li>
+                      <li><a class="dropdown-item" href="#">Ankara</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">İletişim</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <button type="button" class="btn btn-warning">
+                      Kullanıcı Girişi
+                    </button>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Ara"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Ara
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slide1.jpg" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide2.jpg" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide3.jpg" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5 bg-dark bg-opacity-10">
+        <div class="col-10 lh-base my-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error
+          ea libero consectetur, debitis iure alias doloribus rerum nesciunt,
+          maiores nisi, sit ipsa delectus tempore dolore explicabo repellat
+          architecto suscipit?
+        </div>
+        <div class="col-2">
+          <button
+            type="button"
+            class="btn btn-outline-dark my-5"
+            data-bs-target="#exampleModal"
+            data-bs-toggle="modal"
+          >
+            Devamını Oku...
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Rezervasyon
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Gideceğin Yer</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          list="datalistOptions"
+                          id="yourDestination"
+                          placeholder="Gideceğiniz yerin adını veya bir otel ismi girin."
+                        />
+                        <datalist id="datalistOptions">
+                          <option value="San Francisco"></option>
+                          <option value="New York"></option>
+                          <option value="Seattle"></option>
+                          <option value="Los Angeles"></option>
+                          <option value="Chicago"></option>
+                        </datalist>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mt-4"
+                            >Giriş Tarihi</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="checkIn"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mt-4"
+                            >Çıkış Tarihi</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="checkOut"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-4">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mt-4"
+                            >Oda</label
+                          >
+                          <input
+                            type="number"
+                            min="0"
+                            class="form-control"
+                            id="numberRooms"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mt-4"
+                            >Yetişkin</label
+                          >
+                          <input
+                            type="number"
+                            min="0"
+                            class="form-control"
+                            id="numberAdults"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mt-4"
+                            >Çocuk</label
+                          >
+                          <input
+                            type="number"
+                            min="0"
+                            class="form-control"
+                            id="numberChildren"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Kapat
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Kontrol Et
+                  </button>
+
+                  <div id="dataAdults"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5 text-center">
+          <h1>Hoş Geldiniz</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            et officia aperiam! Reiciendis dolor maiores, explicabo officiis
+            omnis dicta illum dolorum vero odio minus! Enim tempore deleniti
+            dignissimos nihil laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-4 text-center">
+          <h1>HTML</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid
+          reiciendis, laudantium vel aperiam numquam nulla alias, pariatur nisi
+          nesciunt soluta voluptatibus, ullam amet error impedit quasi! Eius,
+          sapiente temporibus.
+        </div>
+        <div class="col-4 text-center">
+          <h1>JavaScript</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid
+          reiciendis, laudantium vel aperiam numquam nulla alias, pariatur nisi
+          nesciunt soluta voluptatibus, ullam amet error impedit quasi! Eius,
+          sapiente temporibus.
+        </div>
+        <div class="col-4 text-center">
+          <h1>CSS</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid
+          reiciendis, laudantium vel aperiam numquam nulla alias, pariatur nisi
+          nesciunt soluta voluptatibus, ullam amet error impedit quasi! Eius,
+          sapiente temporibus.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row border-top border-2 mt-5">
+        <div class="col-6">
+          <h1 class="mt-5">Şişli Meslek</h1>
+          <div class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta
+            nemo unde nesciunt doloribus autem inventore,
+          </div>
+          <div class="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta
+            nemo unde nesciunt doloribus autem inventore, labore nam. Aspernatur
+            nisi fugit praesentium cupiditate nam officia vero, eum blanditiis
+            aperiam est?
+          </div>
+          <div class="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta
+            nemo unde nesciunt doloribus autem inventore, labore nam. Aspernatur
+            nisi fugit praesentium cupiditate nam officia vero, eum blanditiis
+            aperiam est?
+          </div>
+          <div class="mt-5 float-end">
+            <button type="button" class="btn btn-primary">
+              Devamını Oku...
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="images/foto.jpg"
+            class="img-fluid rounded-circle mt-5 justify-content-center"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    >
+
+      function kontrolEt(){
+          document.getElementById('dataDestination').innerHTML = document.getElementById('yourDestination').value;
+          document.getElementById('dataIn').innerHTML = document.getElementById('checkIn').value;
+          document.getElementById('dataOut').innerHTML = document.getElementById('checkOut').value;
+          document.getElementById('dataRooms').innerHTML = document.getElementById('numberRooms').value;
+          document.getElementById('dataAdults').innerHTML = document.getElementById('numberAdults').value;
+          document.getElementById('dataChildren').innerHTML = document.getElementById('numberChildren').value;
+      }
+    </script>
+  </body>
+</html>
